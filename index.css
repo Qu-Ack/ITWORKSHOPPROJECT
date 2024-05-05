@@ -1,14 +1,21 @@
-body {
-    background-color: #222;
-    color: #fff;
-    font-family: Arial, sans-serif;
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
 header {
-    background-color: #111;
-    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
 }
 
 .container {
@@ -16,17 +23,9 @@ header {
     margin: 0 auto;
 }
 
-.logo {
-    float: left;
-}
-
 .logo img {
-    width: 120px;
+    width: 150px; /* Adjust logo width as needed */
     height: auto;
-}
-
-nav {
-    float: right;
 }
 
 nav ul {
@@ -37,59 +36,94 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-left: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #444;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
-h1 {
+/* Hero section styles */
+.hero {
+    background-color: #f8f9fa;
+    padding: 100px 0;
     text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
 }
 
-label {
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc5500;
+}
+
+/* Register a Problem section styles */
+.register-section {
+    padding: 50px 0;
+}
+
+.register-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register-section form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-section label {
     display: block;
     margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.register-section input[type="text"],
+.register-section textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #444;
-    color: #fff;
 }
 
-textarea {
-    resize: none;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
+.register-section button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    background-color: #ff6f61;
-    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #ff4125;
+.register-section button[type="submit"]:hover {
+    background-color: #0056b3;
 }
